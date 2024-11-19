@@ -5,9 +5,7 @@ var rndboss = Math.random();
 function random50_50(number){
     var evenNumbers=0, oddNumbers=0, Percentage_of_even=0, Percentage_of_odd=0
     for(let i=0;i<number;i++){
-        var changeNumber = Math.random();
-        changeNumber *= 1000;
-        changeNumber = Math.floor(changeNumber);
+        var changeNumber = Math.floor(Math.random() * (1000 - 100 + 1) + 100);
         if(changeNumber>99){
             if(changeNumber%2 ==0){
                 evenNumbers++
