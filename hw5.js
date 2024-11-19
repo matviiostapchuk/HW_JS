@@ -4,9 +4,12 @@ var animal = {
     continent: "South America",
     getInfo(){
         for (let key in animal){
-            console.log(key + ': ' + animal[key]);
+            if(typeof animal[key]!="function"){
+                console.log(key + ': ' + animal[key]);
+            }
         }
     }
+
 }
 
 animal.getInfo()
