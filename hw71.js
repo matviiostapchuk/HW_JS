@@ -21,8 +21,8 @@ var re = /[a-zA-Z]+\.?[a-zA-Z]*(@gmail|@yahoo).com/;
 function getInfo(){
     for(let j=0;j<3;j++){
         for (let key in arr[j]){
-            if(key=="email"){
-                console.log(arr[j][key] + ': ' + re.test(arr[j][key]));
+            if(key=="email"&(re.test(arr[j][key]))){
+                console.log(arr[j][key]);
             }
         }
     }
